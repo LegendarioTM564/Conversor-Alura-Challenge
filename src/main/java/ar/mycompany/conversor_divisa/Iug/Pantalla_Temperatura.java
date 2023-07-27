@@ -193,11 +193,13 @@ public class Pantalla_Temperatura extends javax.swing.JFrame {
         panelCierre.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 50, 50));
 
         btnAtras.setBackground(new java.awt.Color(86, 105, 129));
+        btnAtras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAtras.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtAtras.setFont(new java.awt.Font("Cascadia Mono PL SemiBold", 0, 24)); // NOI18N
         txtAtras.setForeground(new java.awt.Color(204, 204, 204));
         txtAtras.setText(" ←");
+        txtAtras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         txtAtras.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 txtAtrasMouseClicked(evt);

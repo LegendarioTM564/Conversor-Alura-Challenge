@@ -53,7 +53,6 @@ public class Pantalla_Moneda extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(550, 360));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(550, 380));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -167,6 +166,7 @@ public class Pantalla_Moneda extends javax.swing.JFrame {
         panelCierre.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 50, 50));
 
         btnAtras.setBackground(new java.awt.Color(86, 105, 129));
+        btnAtras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAtras.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtAtras.setFont(new java.awt.Font("Cascadia Mono PL SemiBold", 0, 24)); // NOI18N
