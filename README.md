@@ -28,4 +28,5 @@ Les dejo una pequeña demostración del programa funcionando.
 
 - [NetBens](https://netbeans.apache.org/) - IDE
 - [Maven](https://maven.apache.org/) - Manejo de Dependencias.
-- Swing - Interfaz Grafica. 
+- Swing - Interfaz Grafica.
+- [Api Layer](https://apilayer.com/marketplace/exchangerates_data-api) - Consulta para conversor de Divisas. 
