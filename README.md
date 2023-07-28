@@ -28,4 +28,4 @@ Les dejo una pequeña demostración del programa funcionando.
 
 - [NetBens](https://netbeans.apache.org/) - IDE
 - [Maven](https://maven.apache.org/) - Manejo de Dependencias.
-- [swing] - Interfaz Grafica. 
+- Swing - Interfaz Grafica. 
