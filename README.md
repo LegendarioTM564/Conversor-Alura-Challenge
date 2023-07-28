@@ -8,13 +8,17 @@ Debe descargar el proyecto y ejecutar el archivo .jar que se encuentra en la rut
 
 ## Despliegue 📦
 Una vez iniciado el programa se vera de la siguiente manera.
+
 ![Pantalla Inicio](https://i.imgur.com/4XDxUPK.png)
 ![Pantalla Divisa](https://i.imgur.com/y0q4pTP.png)
 ![Pantalla Temperatura](https://i.imgur.com/0JEVp8u.png)
 
 Podrá seleccionar cualquier opción y realizar la conversión deseada!
 
+
 ## Demo ⌨️ 
+
+
 Les dejo una pequeña demostración del programa funcionando.
 ![Demostracion](https://i.imgur.com/9T10Zpf.gif)
 
