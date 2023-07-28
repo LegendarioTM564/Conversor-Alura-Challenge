@@ -20,11 +20,12 @@ Podrá seleccionar cualquier opción y realizar la conversión deseada!
 
 
 Les dejo una pequeña demostración del programa funcionando.
+
 ![Demostracion](https://i.imgur.com/9T10Zpf.gif)
 
 
 ## Construido con 🛠️
 
 - [NetBens](https://netbeans.apache.org/) - IDE
-- [Maven] (https://maven.apache.org/) - Manejo de Dependencias.
+- [Maven](https://maven.apache.org/) - Manejo de Dependencias.
 - [swing] - Interfaz Grafica. 
