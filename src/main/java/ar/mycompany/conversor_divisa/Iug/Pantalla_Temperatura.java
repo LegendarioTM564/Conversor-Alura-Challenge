@@ -54,11 +54,9 @@ public class Pantalla_Temperatura extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         setResizable(false);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(86, 105, 129));
         jPanel1.setPreferredSize(new java.awt.Dimension(550, 360));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         cmbTemp2.setBackground(new java.awt.Color(86, 105, 129));
         cmbTemp2.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
@@ -70,16 +68,14 @@ public class Pantalla_Temperatura extends javax.swing.JFrame {
                 cmbTemp2ActionPerformed(evt);
             }
         });
-        jPanel1.add(cmbTemp2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 210, 90, 40));
 
         jLabel2.setFont(new java.awt.Font("Roboto Black", 1, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("TEMPERATURA");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, -1, -1));
 
         TxtTemperatura.setBackground(new java.awt.Color(86, 105, 129));
         TxtTemperatura.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        TxtTemperatura.setForeground(new java.awt.Color(204, 204, 204));
+        TxtTemperatura.setForeground(new java.awt.Color(255, 255, 255));
         TxtTemperatura.setText("Ingrese la Temperatura");
         TxtTemperatura.setBorder(null);
         TxtTemperatura.setPreferredSize(new java.awt.Dimension(105, 22));
@@ -98,18 +94,16 @@ public class Pantalla_Temperatura extends javax.swing.JFrame {
                 TxtTemperaturaKeyTyped(evt);
             }
         });
-        jPanel1.add(TxtTemperatura, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 190, 40));
 
         cmbTemp1.setBackground(new java.awt.Color(86, 105, 129));
         cmbTemp1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         cmbTemp1.setForeground(new java.awt.Color(0, 0, 0));
         cmbTemp1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "°C", "°F", "K" }));
         cmbTemp1.setBorder(null);
-        jPanel1.add(cmbTemp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 130, 89, 40));
 
         TxtTemperaturaFinal.setBackground(new java.awt.Color(86, 105, 129));
         TxtTemperaturaFinal.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        TxtTemperaturaFinal.setForeground(new java.awt.Color(204, 204, 204));
+        TxtTemperaturaFinal.setForeground(new java.awt.Color(255, 255, 255));
         TxtTemperaturaFinal.setBorder(null);
         TxtTemperaturaFinal.setPreferredSize(new java.awt.Dimension(105, 22));
         TxtTemperaturaFinal.addActionListener(new java.awt.event.ActionListener() {
@@ -117,16 +111,10 @@ public class Pantalla_Temperatura extends javax.swing.JFrame {
                 TxtTemperaturaFinalActionPerformed(evt);
             }
         });
-        jPanel1.add(TxtTemperaturaFinal, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 190, 40));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 210, -1));
-        jPanel1.add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 174, 200, 0));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 210, 10));
-        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 300, -1));
 
         btnConvertir.setBackground(new java.awt.Color(137, 167, 177));
         btnConvertir.setForeground(new java.awt.Color(86, 105, 129));
         btnConvertir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnConvertir.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         textConvertir.setBackground(new java.awt.Color(137, 167, 177));
         textConvertir.setFont(new java.awt.Font("Roboto Black", 0, 14)); // NOI18N
@@ -144,9 +132,19 @@ public class Pantalla_Temperatura extends javax.swing.JFrame {
                 textConvertirMouseExited(evt);
             }
         });
-        btnConvertir.add(textConvertir, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 150, 50));
 
-        jPanel1.add(btnConvertir, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 150, 60));
+        javax.swing.GroupLayout btnConvertirLayout = new javax.swing.GroupLayout(btnConvertir);
+        btnConvertir.setLayout(btnConvertirLayout);
+        btnConvertirLayout.setHorizontalGroup(
+            btnConvertirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(textConvertir, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        btnConvertirLayout.setVerticalGroup(
+            btnConvertirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnConvertirLayout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(textConvertir, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         panelCierre.setBackground(new java.awt.Color(86, 105, 129));
         panelCierre.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -159,7 +157,6 @@ public class Pantalla_Temperatura extends javax.swing.JFrame {
                 panelCierreMousePressed(evt);
             }
         });
-        panelCierre.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnExit.setBackground(new java.awt.Color(86, 105, 129));
         btnExit.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -170,7 +167,6 @@ public class Pantalla_Temperatura extends javax.swing.JFrame {
                 btnExitMouseExited(evt);
             }
         });
-        btnExit.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtExit.setBackground(new java.awt.Color(137, 167, 177));
         txtExit.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
@@ -188,13 +184,20 @@ public class Pantalla_Temperatura extends javax.swing.JFrame {
                 txtExitMouseExited(evt);
             }
         });
-        btnExit.add(txtExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 50));
 
-        panelCierre.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 50, 50));
+        javax.swing.GroupLayout btnExitLayout = new javax.swing.GroupLayout(btnExit);
+        btnExit.setLayout(btnExitLayout);
+        btnExitLayout.setHorizontalGroup(
+            btnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtExit, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        btnExitLayout.setVerticalGroup(
+            btnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtExit, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         btnAtras.setBackground(new java.awt.Color(86, 105, 129));
         btnAtras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAtras.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtAtras.setFont(new java.awt.Font("Cascadia Mono PL SemiBold", 0, 24)); // NOI18N
         txtAtras.setForeground(new java.awt.Color(204, 204, 204));
@@ -211,13 +214,105 @@ public class Pantalla_Temperatura extends javax.swing.JFrame {
                 txtAtrasMouseExited(evt);
             }
         });
-        btnAtras.add(txtAtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 50));
 
-        panelCierre.add(btnAtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 50));
+        javax.swing.GroupLayout btnAtrasLayout = new javax.swing.GroupLayout(btnAtras);
+        btnAtras.setLayout(btnAtrasLayout);
+        btnAtrasLayout.setHorizontalGroup(
+            btnAtrasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        btnAtrasLayout.setVerticalGroup(
+            btnAtrasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
-        jPanel1.add(panelCierre, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 50));
+        javax.swing.GroupLayout panelCierreLayout = new javax.swing.GroupLayout(panelCierre);
+        panelCierre.setLayout(panelCierreLayout);
+        panelCierreLayout.setHorizontalGroup(
+            panelCierreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelCierreLayout.createSequentialGroup()
+                .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(460, 460, 460)
+                .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelCierreLayout.setVerticalGroup(
+            panelCierreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 390));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelCierre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(130, 130, 130)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel2))
+                    .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(130, 130, 130)
+                .addComponent(TxtTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(cmbTemp1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(120, 120, 120)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(130, 130, 130)
+                .addComponent(TxtTemperaturaFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(cmbTemp2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(120, 120, 120)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(200, 200, 200)
+                .addComponent(btnConvertir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(panelCierre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(27, 27, 27)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TxtTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmbTemp1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TxtTemperaturaFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmbTemp2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addComponent(btnConvertir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -1,10 +1,12 @@
 
 package ar.mycompany.conversor_divisa.Logica;
 
+import org.json.JSONObject;
+
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Scanner;
-import org.json.JSONObject;
+
 
 
 public class Api {

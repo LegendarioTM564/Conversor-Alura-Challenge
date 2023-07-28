@@ -54,20 +54,17 @@ public class Pantalla_Moneda extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(550, 360));
         setUndecorated(true);
         setResizable(false);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(86, 105, 129));
         jPanel1.setPreferredSize(new java.awt.Dimension(550, 360));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Roboto Black", 1, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("DIVISA");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, -1, -1));
 
         TxtMoneda.setBackground(new java.awt.Color(86, 105, 129));
         TxtMoneda.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        TxtMoneda.setForeground(new java.awt.Color(204, 204, 204));
+        TxtMoneda.setForeground(new java.awt.Color(255, 255, 255));
         TxtMoneda.setText("Ingrese el Monto");
         TxtMoneda.setBorder(null);
         TxtMoneda.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -85,7 +82,6 @@ public class Pantalla_Moneda extends javax.swing.JFrame {
                 TxtMonedaKeyTyped(evt);
             }
         });
-        jPanel1.add(TxtMoneda, new org.netbeans.lib.awtextra.AbsoluteConstraints(104, 120, 200, 40));
 
         cmbMoneda2.setBackground(new java.awt.Color(86, 105, 129));
         cmbMoneda2.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
@@ -97,11 +93,10 @@ public class Pantalla_Moneda extends javax.swing.JFrame {
                 cmbMoneda2ActionPerformed(evt);
             }
         });
-        jPanel1.add(cmbMoneda2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 200, 120, 40));
 
         txtTotalMoneda.setBackground(new java.awt.Color(86, 105, 129));
         txtTotalMoneda.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        txtTotalMoneda.setForeground(new java.awt.Color(204, 204, 204));
+        txtTotalMoneda.setForeground(new java.awt.Color(255, 255, 255));
         txtTotalMoneda.setBorder(null);
         txtTotalMoneda.setPreferredSize(new java.awt.Dimension(105, 22));
         txtTotalMoneda.addActionListener(new java.awt.event.ActionListener() {
@@ -109,17 +104,12 @@ public class Pantalla_Moneda extends javax.swing.JFrame {
                 txtTotalMonedaActionPerformed(evt);
             }
         });
-        jPanel1.add(txtTotalMoneda, new org.netbeans.lib.awtextra.AbsoluteConstraints(104, 200, 200, 40));
 
         cmbMoneda1.setBackground(new java.awt.Color(86, 105, 129));
         cmbMoneda1.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         cmbMoneda1.setForeground(new java.awt.Color(0, 0, 0));
         cmbMoneda1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "USD", "EUR", "GBP", "JPY", "KRW", "ARS" }));
         cmbMoneda1.setBorder(null);
-        jPanel1.add(cmbMoneda1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, 120, 40));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 210, -1));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 210, -1));
-        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 210, 20));
 
         panelCierre.setBackground(new java.awt.Color(86, 105, 129));
         panelCierre.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -132,7 +122,6 @@ public class Pantalla_Moneda extends javax.swing.JFrame {
                 panelCierreMousePressed(evt);
             }
         });
-        panelCierre.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnExit.setBackground(new java.awt.Color(86, 105, 129));
         btnExit.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -143,7 +132,6 @@ public class Pantalla_Moneda extends javax.swing.JFrame {
                 btnExitMouseExited(evt);
             }
         });
-        btnExit.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtExit.setBackground(new java.awt.Color(137, 167, 177));
         txtExit.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
@@ -161,13 +149,20 @@ public class Pantalla_Moneda extends javax.swing.JFrame {
                 txtExitMouseExited(evt);
             }
         });
-        btnExit.add(txtExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 50, 50));
 
-        panelCierre.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 0, 50, 50));
+        javax.swing.GroupLayout btnExitLayout = new javax.swing.GroupLayout(btnExit);
+        btnExit.setLayout(btnExitLayout);
+        btnExitLayout.setHorizontalGroup(
+            btnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtExit, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        btnExitLayout.setVerticalGroup(
+            btnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtExit, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         btnAtras.setBackground(new java.awt.Color(86, 105, 129));
         btnAtras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAtras.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtAtras.setFont(new java.awt.Font("Cascadia Mono PL SemiBold", 0, 24)); // NOI18N
         txtAtras.setForeground(new java.awt.Color(204, 204, 204));
@@ -183,16 +178,36 @@ public class Pantalla_Moneda extends javax.swing.JFrame {
                 txtAtrasMouseExited(evt);
             }
         });
-        btnAtras.add(txtAtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 50));
 
-        panelCierre.add(btnAtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 40, 50));
+        javax.swing.GroupLayout btnAtrasLayout = new javax.swing.GroupLayout(btnAtras);
+        btnAtras.setLayout(btnAtrasLayout);
+        btnAtrasLayout.setHorizontalGroup(
+            btnAtrasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        btnAtrasLayout.setVerticalGroup(
+            btnAtrasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
-        jPanel1.add(panelCierre, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 50));
+        javax.swing.GroupLayout panelCierreLayout = new javax.swing.GroupLayout(panelCierre);
+        panelCierre.setLayout(panelCierreLayout);
+        panelCierreLayout.setHorizontalGroup(
+            panelCierreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelCierreLayout.createSequentialGroup()
+                .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(460, 460, 460)
+                .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelCierreLayout.setVerticalGroup(
+            panelCierreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         btnConvertir.setBackground(new java.awt.Color(137, 167, 177));
         btnConvertir.setForeground(new java.awt.Color(86, 105, 129));
         btnConvertir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnConvertir.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         textConvertir.setBackground(new java.awt.Color(137, 167, 177));
         textConvertir.setFont(new java.awt.Font("Roboto Black", 0, 14)); // NOI18N
@@ -210,12 +225,89 @@ public class Pantalla_Moneda extends javax.swing.JFrame {
                 textConvertirMouseExited(evt);
             }
         });
-        btnConvertir.add(textConvertir, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 150, 50));
 
-        jPanel1.add(btnConvertir, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 150, 60));
-        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 140, 10));
+        javax.swing.GroupLayout btnConvertirLayout = new javax.swing.GroupLayout(btnConvertir);
+        btnConvertir.setLayout(btnConvertirLayout);
+        btnConvertirLayout.setHorizontalGroup(
+            btnConvertirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(textConvertir, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        btnConvertirLayout.setVerticalGroup(
+            btnConvertirLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnConvertirLayout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(textConvertir, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 380));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelCierre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(190, 190, 190)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel2))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(104, 104, 104)
+                .addComponent(TxtMoneda, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16)
+                .addComponent(cmbMoneda1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(104, 104, 104)
+                .addComponent(txtTotalMoneda, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16)
+                .addComponent(cmbMoneda2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(200, 200, 200)
+                .addComponent(btnConvertir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(panelCierre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(40, 40, 40)
+                        .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel2))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TxtMoneda, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmbMoneda1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtTotalMoneda, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cmbMoneda2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(btnConvertir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -297,8 +389,8 @@ public class Pantalla_Moneda extends javax.swing.JFrame {
 
     private void textConvertirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textConvertirMouseClicked
         double monto =Double.valueOf(TxtMoneda.getText()) ;
-        String monedaPrincipal = (String) cmbMoneda2.getSelectedItem();
-        String monedaConversion = (String) cmbMoneda1.getSelectedItem();
+        String monedaPrincipal = (String) cmbMoneda1.getSelectedItem();
+        String monedaConversion = (String) cmbMoneda2.getSelectedItem();
         
          Api getApi = new Api();
          getApi.getApi(monedaPrincipal,monedaConversion,monto);

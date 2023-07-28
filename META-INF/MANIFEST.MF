@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: ar.mycompany.conversor_divisa.Conversor_Divisa
+
